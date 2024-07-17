@@ -1,28 +1,22 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
-// import { productos } from "../data/asyncMock";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
+import { initializeApp } from 'firebase/app'
+import { addDoc, collection, getFirestore } from 'firebase/firestore'
+import { productos } from '../data/asyncMock'
 const firebaseConfig = {
-  apiKey: "AIzaSyBSQ_uXzcWAx2HrCMWVM9b6835T1UBGzU8",
-  authDomain: "tienda-62320.firebaseapp.com",
-  projectId: "tienda-62320",
-  storageBucket: "tienda-62320.appspot.com",
-  messagingSenderId: "229773726131",
-  appId: "1:229773726131:web:b4eb184d3e4859a4f53bc6",
-};
+  apiKey: 'AIzaSyBglb4gpnrghz2EeVcBBpZh-lPf_qmmF8k',
+  authDomain: 'coder-1c5e6.firebaseapp.com',
+  projectId: 'coder-1c5e6',
+  storageBucket: 'coder-1c5e6.appspot.com',
+  messagingSenderId: '388756133826',
+  appId: '1:388756133826:web:89368fbc32104280baa85b'
+}
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const app = initializeApp(firebaseConfig)
+export const db = getFirestore(app)
 
-// productos.forEach((prod) => {
-//   addDoc(collection(db, "productos"), prod)
-//     .then((data) =>
-//       console.log(`El producto ${data.id} se subió correctamente`)
-//     )
-//     .catch((error) => console.log(error));
-// });
+/*
+productos.forEach((prod) => {
+  addDoc(collection(db, 'productos'), prod)
+    .then((data) => console.log(`El producto ${data.id} se subió correctamente`))
+    .catch((error) => console.log(error))
+})
+*/
