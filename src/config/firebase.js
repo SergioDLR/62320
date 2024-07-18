@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app'
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import { productos } from '../data/asyncMock'
+
 const firebaseConfig = {
   apiKey: 'AIzaSyBglb4gpnrghz2EeVcBBpZh-lPf_qmmF8k',
   authDomain: 'coder-1c5e6.firebaseapp.com',
